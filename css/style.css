@@ -45,6 +45,7 @@ header h1 { /*Style definition for any <h1> in <header>:*/
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: static;
   
     width: 100%;
     max-width: 900px;
@@ -62,15 +63,8 @@ nav li { /*Style definition for any <li> in <header>:*/
  img {
      /* max-width: 100%;
      min-width: auto; */
-     width: 360px;
+     /* width: 360px; */
      border-radius: 10px;
- }
- 
-.c64 {
-    border: 5mm solid #0088FF; /* screen: #0000AA, border and chars: #0088FF */
-    background-color: #0000AA;
-    color: #0088FF;
-    text-align: center;
  }
 
  .container {
@@ -79,10 +73,16 @@ nav li { /*Style definition for any <li> in <header>:*/
     justify-content: flex-start;
     padding: 40px 0 0 0;
   }
+
+  .center {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+  }
   
- /* .image {
+ .image {
     flex-basis: 40%
-  } */
+  }
   
   .text {
     font-size: 20px;
