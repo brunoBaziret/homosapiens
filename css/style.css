@@ -1,0 +1,101 @@
+@font-face { /*Embedding fonts from fontsquirrel.com*/
+    font-family: "Roboto-Medium-webfont";
+    src: url(/fonts/Roboto-Medium-webfont.woff) format("woff");
+    font-style: normal;
+    font-weight: normal;
+
+    font-family: "Impact_Label-webfont";
+    src: url(/fonts/Impact_Label-webfont.woff) format("woff");
+    font-style: normal;
+    font-weight: normal;
+}
+
+* { /* Universal selector ('*') to override default browser style and reset it to predictable behaviour:*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*ensures that WIDTH is width of content+padding+border*/
+  }
+
+  html{
+      background-color: lightgray;
+  }
+
+p {
+    font-family: "Roboto-Medium-webfont";
+    text-align: justify;
+    color: black;
+    line-height: 2em;
+}
+
+header h1 { /*Style definition for any <h1> in <header>:*/
+    font-family: "Impact_Label-webfont";
+    text-align: center;
+    color: black;
+    padding: 40px 0 0 0;
+}
+
+ header h2 { /*Style definition for any <h2> in <header>:*/
+    font-family: "Roboto-Medium-webfont";
+    text-align: center;
+    color: black;
+    padding: 40px 0 0 0;
+ }
+
+ nav ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 0 0 0;
+  }
+
+nav li { /*Style definition for any <li> in <header>:*/
+     list-style-type: none;
+     font-family: "Roboto-Medium-webfont";
+     color: #FFFFFF;
+     font-size: 1.2em;
+ }
+
+ img {
+     /* max-width: 100%;
+     min-width: auto; */
+     width: 360px;
+     border-radius: 10px;
+ }
+ 
+.c64 {
+    border: 5mm solid #0088FF; /* screen: #0000AA, border and chars: #0088FF */
+    background-color: #0000AA;
+    color: #0088FF;
+    text-align: center;
+ }
+
+ .container {
+    display: flex;
+    align-items: top;
+    justify-content: flex-start;
+    padding: 40px 0 0 0;
+  }
+  
+ /* .image {
+    flex-basis: 40%
+  } */
+  
+  .text {
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 100px;
+  }
+
+ @media only screen and (max-width: 401px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center
+      }
+     
+ }
