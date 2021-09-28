@@ -8,6 +8,12 @@
     src: url(/fonts/Impact_Label-webfont.woff) format("woff");
     font-style: normal;
     font-weight: normal;
+
+    /* font-family: "silkscreen_expandednormal";
+    src: url(/fonts/slkscre-webfont.woff) format("woff");
+
+    font-style: normal;
+    font-weight: normal; */
 }
 
 * { /* Universal selector ('*') to override default browser style and reset it to predictable behaviour:*/
@@ -38,7 +44,7 @@ header h1 { /*Style definition for any <h1> in <header>:*/
     font-family: "Roboto-Medium-webfont";
     text-align: center;
     color: black;
-    padding: 40px 0 0 0;
+    padding: 40px 0 40px 0;
  }
 
  nav ul {
@@ -67,6 +73,19 @@ nav li { /*Style definition for any <li> in <header>:*/
      border-radius: 10px;
  }
 
+ a:link {
+   color:black;
+ }
+ a:visited {
+   color: grey;
+ }
+ a:hover {
+   color: blue;
+ }
+ a:active {
+color: red
+ }
+
  .container {
     display: flex;
     align-items: top;
@@ -88,6 +107,17 @@ nav li { /*Style definition for any <li> in <header>:*/
     font-size: 20px;
     padding-left: 10px;
     padding-right: 100px;
+  }
+
+  .text:hover {
+    /* display: block; */
+    width: max-content;
+    background-color: lightgray;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 100px;
+
+
   }
 
  @media only screen and (max-width: 401px) {
