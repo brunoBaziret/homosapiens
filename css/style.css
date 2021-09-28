@@ -20,11 +20,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box; /*ensures that WIDTH is width of content+padding+border*/
-  }
+}
 
-  html{
+html {
       background-color: lightgray;
-  }
+}
 
 p {
     font-family: "Roboto-Medium-webfont";
@@ -40,14 +40,14 @@ header h1 { /*Style definition for any <h1> in <header>:*/
     padding: 40px 0 0 0;
 }
 
- header h2 { /*Style definition for any <h2> in <header>:*/
+header h2 { /*Style definition for any <h2> in <header>:*/
     font-family: "Roboto-Medium-webfont";
     text-align: center;
     color: black;
     padding: 40px 0 40px 0;
- }
+}
 
- nav ul {
+nav ul {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -57,75 +57,72 @@ header h1 { /*Style definition for any <h1> in <header>:*/
     max-width: 900px;
     margin: 0 auto;
     padding: 40px 0 0 0;
-  }
+}
 
 nav li { /*Style definition for any <li> in <header>:*/
      list-style-type: none;
      font-family: "Roboto-Medium-webfont";
      color: #FFFFFF;
      font-size: 1.2em;
- }
+}
 
- img {
+img {
      /* max-width: 100%;
      min-width: auto; */
      /* width: 360px; */
      border-radius: 10px;
- }
+}
 
- a:link {
+a:link {
    color:black;
- }
- a:visited {
-   color: grey;
- }
- a:hover {
-   color: blue;
- }
- a:active {
-color: red
- }
+}
 
- .container {
+a:visited {
+   color: grey;
+}
+
+a:hover {
+   color: blue;
+}
+
+a:active {
+  color: red
+}
+
+.container {
     display: flex;
     align-items: top;
-    justify-content: flex-start;
+    justify-content: center;
     padding: 40px 0 0 0;
-  }
-
-  .center {
-    display: block;
-    margin: 0 auto;
-    width: 50%;
-  }
+}
   
- .image {
+.image {
     flex-basis: 40%
-  }
+}
   
-  .text {
+.text {
     font-size: 20px;
     padding-left: 10px;
     padding-right: 100px;
-  }
+}
 
-  .text:hover {
-    /* display: block; */
+.text-no-padding {
+    font-size: 20px;
     width: max-content;
+}
+
+.text-no-padding:hover {
+    display: block;
+
+    width: 35%;
     background-color: lightgray;
     border-radius: 10px;
-    padding-left: 10px;
-    padding-right: 100px;
+}
 
-
-  }
-
- @media only screen and (max-width: 401px) {
+@media only screen and (max-width: 401px) {
     .container {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center
-      }
-     
- }
+}
